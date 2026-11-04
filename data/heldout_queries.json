@@ -1,0 +1,15 @@
+{
+  "_note": "Held-out paraphrased lost reports. Written after the vocabularies and never used to tune them. Some reuse the finder's category word, some use synonyms, some leave fields unknown (null).",
+  "queries": [
+    {"report_id": "Q01", "answer": "F01", "kind": "lost", "category": "flask", "color": "cobalt", "brand": null, "location": "building 32", "date": "2026-10-20", "description": "metal flask, a bit dented"},
+    {"report_id": "Q02", "answer": "F02", "kind": "lost", "category": "smartphone", "color": "jet black", "brand": null, "location": "Stratton", "date": "2026-10-21", "description": "smartphone with a transparent cover"},
+    {"report_id": "Q03", "answer": "F03", "kind": "lost", "category": "earbuds", "color": null, "brand": null, "location": "the pool", "date": null, "description": "noise-cancelling earbuds in their charging case"},
+    {"report_id": "Q04", "answer": "F04", "kind": "lost", "category": "keychain", "color": "grey", "brand": null, "location": "Lobby 7", "date": "2026-10-23", "description": "bunch of keys clipped to a carabiner"},
+    {"report_id": "Q05", "answer": "F05", "kind": "lost", "category": "wallet", "color": "tan", "brand": null, "location": "red line", "date": "2026-10-19", "description": "leather wallet"},
+    {"report_id": "Q06", "answer": "F06", "kind": "lost", "category": "brolly", "color": "forest green", "brand": null, "location": "building 10", "date": null, "description": "golf-size brolly"},
+    {"report_id": "Q07", "answer": "F07", "kind": "lost", "category": "power adapter", "color": "white", "brand": null, "location": "barker", "date": "2026-10-25", "description": "macbook power adapter"},
+    {"report_id": "Q08", "answer": "F08", "kind": "lost", "category": "fleece", "color": "dark blue", "brand": "Patagonia", "location": "E15", "date": "2026-10-21", "description": "patagonia fleece, medium"},
+    {"report_id": "Q09", "answer": "F09", "kind": "lost", "category": "backpack", "color": "grey", "brand": "Herschel", "location": "cafeteria", "date": "2026-10-26", "description": "herschel backpack with a laptop sleeve"},
+    {"report_id": "Q10", "answer": "F10", "kind": "lost", "category": "spectacles", "color": "charcoal", "brand": null, "location": "library reading room", "date": null, "description": "spectacles in a hard case"}
+  ]
+}

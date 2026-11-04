@@ -1,0 +1,199 @@
+{
+  "alias_matcher": {
+    "summary": {
+      "hit@3": "10/10",
+      "mean_wrong_in_top3": 1.0,
+      "no_candidate": 0
+    },
+    "rows": [
+      {
+        "query": "Q01",
+        "answer": "F01",
+        "top3": [
+          "F01",
+          "D01",
+          "D02"
+        ],
+        "hit": true,
+        "wrong_in_top3": 2
+      },
+      {
+        "query": "Q02",
+        "answer": "F02",
+        "top3": [
+          "F02",
+          "D03"
+        ],
+        "hit": true,
+        "wrong_in_top3": 1
+      },
+      {
+        "query": "Q03",
+        "answer": "F03",
+        "top3": [
+          "F03",
+          "D04"
+        ],
+        "hit": true,
+        "wrong_in_top3": 1
+      },
+      {
+        "query": "Q04",
+        "answer": "F04",
+        "top3": [
+          "F04",
+          "D05"
+        ],
+        "hit": true,
+        "wrong_in_top3": 1
+      },
+      {
+        "query": "Q05",
+        "answer": "F05",
+        "top3": [
+          "F05",
+          "D06"
+        ],
+        "hit": true,
+        "wrong_in_top3": 1
+      },
+      {
+        "query": "Q06",
+        "answer": "F06",
+        "top3": [
+          "F06"
+        ],
+        "hit": true,
+        "wrong_in_top3": 0
+      },
+      {
+        "query": "Q07",
+        "answer": "F07",
+        "top3": [
+          "F07",
+          "D08"
+        ],
+        "hit": true,
+        "wrong_in_top3": 1
+      },
+      {
+        "query": "Q08",
+        "answer": "F08",
+        "top3": [
+          "F08",
+          "D09",
+          "D07"
+        ],
+        "hit": true,
+        "wrong_in_top3": 2
+      },
+      {
+        "query": "Q09",
+        "answer": "F09",
+        "top3": [
+          "F09",
+          "D10"
+        ],
+        "hit": true,
+        "wrong_in_top3": 1
+      },
+      {
+        "query": "Q10",
+        "answer": "F10",
+        "top3": [
+          "F10"
+        ],
+        "hit": true,
+        "wrong_in_top3": 0
+      }
+    ]
+  },
+  "baseline": {
+    "summary": {
+      "hit@3": "3/10",
+      "mean_wrong_in_top3": 0.3,
+      "no_candidate": 7
+    },
+    "rows": [
+      {
+        "query": "Q01",
+        "answer": "F01",
+        "top3": [],
+        "hit": false,
+        "wrong_in_top3": 0
+      },
+      {
+        "query": "Q02",
+        "answer": "F02",
+        "top3": [],
+        "hit": false,
+        "wrong_in_top3": 0
+      },
+      {
+        "query": "Q03",
+        "answer": "F03",
+        "top3": [
+          "F03",
+          "D04"
+        ],
+        "hit": true,
+        "wrong_in_top3": 1
+      },
+      {
+        "query": "Q04",
+        "answer": "F04",
+        "top3": [],
+        "hit": false,
+        "wrong_in_top3": 0
+      },
+      {
+        "query": "Q05",
+        "answer": "F05",
+        "top3": [
+          "F05",
+          "D06"
+        ],
+        "hit": true,
+        "wrong_in_top3": 1
+      },
+      {
+        "query": "Q06",
+        "answer": "F06",
+        "top3": [],
+        "hit": false,
+        "wrong_in_top3": 0
+      },
+      {
+        "query": "Q07",
+        "answer": "F07",
+        "top3": [],
+        "hit": false,
+        "wrong_in_top3": 0
+      },
+      {
+        "query": "Q08",
+        "answer": "F08",
+        "top3": [],
+        "hit": false,
+        "wrong_in_top3": 0
+      },
+      {
+        "query": "Q09",
+        "answer": "F09",
+        "top3": [
+          "F09",
+          "D10"
+        ],
+        "hit": true,
+        "wrong_in_top3": 1
+      },
+      {
+        "query": "Q10",
+        "answer": "F10",
+        "top3": [],
+        "hit": false,
+        "wrong_in_top3": 0
+      }
+    ]
+  }
+}

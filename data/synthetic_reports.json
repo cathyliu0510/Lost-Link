@@ -1,0 +1,39 @@
+{
+  "_note": "AI-generated synthetic data for one campus. 10 found/lost pairs (F01-F10 / L01-L10) + 10 distractor found reports (D01-D10) = 30 reports. L01-L10 were used while writing the vocabularies; heldout_queries.json was NOT.",
+  "found": [
+    {"report_id": "F01", "kind": "found", "category": "water bottle", "color": "blue", "brand": "Hydro Flask", "location": "Stata Center 1st floor", "date": "2026-10-20", "description": "Blue Hydro Flask water bottle with dents, left on a table", "private_detail": "NASA sticker on the bottom"},
+    {"report_id": "F02", "kind": "found", "category": "phone", "color": "black", "brand": "Apple", "location": "Student Center", "date": "2026-10-22", "description": "Black iPhone in a clear case", "private_detail": "lock screen photo of a beagle"},
+    {"report_id": "F03", "kind": "found", "category": "earbuds", "color": "white", "brand": "Apple", "location": "Z Center", "date": "2026-10-18", "description": "White AirPods Pro charging case", "private_detail": "initials JK engraved on the case"},
+    {"report_id": "F04", "kind": "found", "category": "keys", "color": "silver", "brand": null, "location": "Infinite Corridor", "date": "2026-10-23", "description": "Keyring with three keys and a red carabiner", "private_detail": "one key has a blue rubber cap"},
+    {"report_id": "F05", "kind": "found", "category": "wallet", "color": "brown", "brand": null, "location": "Kendall Square T station", "date": "2026-10-19", "description": "Brown leather wallet, worn corners", "private_detail": "contains a Harvard library card"},
+    {"report_id": "F06", "kind": "found", "category": "umbrella", "color": "green", "brand": null, "location": "Lobby 10", "date": "2026-10-24", "description": "Large green golf umbrella", "private_detail": "wooden handle with a crack"},
+    {"report_id": "F07", "kind": "found", "category": "charger", "color": "white", "brand": "Apple", "location": "Barker Library", "date": "2026-10-25", "description": "USB-C 65W laptop charger for a MacBook", "private_detail": "masking tape label on the brick"},
+    {"report_id": "F08", "kind": "found", "category": "jacket", "color": "navy", "brand": "Patagonia", "location": "Media Lab E14", "date": "2026-10-21", "description": "Navy Patagonia fleece jacket, size M", "private_detail": "transit receipt in left pocket"},
+    {"report_id": "F09", "kind": "found", "category": "backpack", "color": "gray", "brand": "Herschel", "location": "Maseeh dining hall", "date": "2026-10-26", "description": "Gray Herschel backpack with laptop sleeve", "private_detail": "orange keychain on zipper"},
+    {"report_id": "F10", "kind": "found", "category": "glasses", "color": "black", "brand": null, "location": "Rotch Library", "date": "2026-10-22", "description": "Black-framed eyeglasses in a hard case", "private_detail": "case is from a Boston optician"}
+  ],
+  "distractors": [
+    {"report_id": "D01", "kind": "found", "category": "bottle", "color": "navy", "brand": "Nalgene", "location": "Z Center", "date": "2026-10-20", "description": "Navy Nalgene bottle near the pool", "private_detail": "climbing gym sticker"},
+    {"report_id": "D02", "kind": "found", "category": "thermos", "color": "black", "brand": null, "location": "Hayden Library", "date": "2026-10-27", "description": "Black thermos on a study table", "private_detail": "smells like coffee, dented lid"},
+    {"report_id": "D03", "kind": "found", "category": "phone", "color": "black", "brand": "Google", "location": "Stata Center", "date": "2026-10-22", "description": "Black Pixel phone, cracked screen", "private_detail": "wallpaper is a mountain"},
+    {"report_id": "D04", "kind": "found", "category": "earbuds", "color": "white", "brand": null, "location": "Student Center", "date": "2026-10-18", "description": "Wired white earbuds", "private_detail": "left bud has tape"},
+    {"report_id": "D05", "kind": "found", "category": "keys", "color": "silver", "brand": null, "location": "Kendall Square", "date": "2026-10-23", "description": "Single key on a ring", "private_detail": "stamped DO NOT COPY"},
+    {"report_id": "D06", "kind": "found", "category": "wallet", "color": "black", "brand": null, "location": "Kendall T", "date": "2026-10-19", "description": "Black nylon wallet with velcro", "private_detail": "contains a gym card"},
+    {"report_id": "D07", "kind": "found", "category": "hoodie", "color": "green", "brand": null, "location": "Lobby 10", "date": "2026-10-24", "description": "Green hoodie with a university logo", "private_detail": "drawstring missing"},
+    {"report_id": "D08", "kind": "found", "category": "charger", "color": "white", "brand": "Apple", "location": "Barker Library", "date": "2026-10-25", "description": "White iPhone lightning charging cable", "private_detail": "frayed near the connector"},
+    {"report_id": "D09", "kind": "found", "category": "jacket", "color": "blue", "brand": null, "location": "Media Lab", "date": "2026-10-10", "description": "Blue rain shell jacket", "private_detail": "hood is detachable"},
+    {"report_id": "D10", "kind": "found", "category": "backpack", "color": "gray", "brand": null, "location": "Stata Center", "date": "2026-10-26", "description": "Gray backpack with water bottle pocket", "private_detail": "physics textbook inside"}
+  ],
+  "lost_tuning": [
+    {"report_id": "L01", "answer": "F01", "kind": "lost", "category": "water bottle", "color": "blue", "brand": "Hydro Flask", "location": "Stata", "date": "2026-10-20", "description": "blue hydroflask water bottle"},
+    {"report_id": "L02", "answer": "F02", "kind": "lost", "category": "iphone", "color": "black", "brand": null, "location": "Student Center", "date": "2026-10-22", "description": "black iphone, clear case"},
+    {"report_id": "L03", "answer": "F03", "kind": "lost", "category": "airpods", "color": "white", "brand": null, "location": "Z Center", "date": "2026-10-18", "description": "airpods pro case"},
+    {"report_id": "L04", "answer": "F04", "kind": "lost", "category": "keys", "color": null, "brand": null, "location": "Infinite Corridor", "date": "2026-10-23", "description": "keys with a red carabiner"},
+    {"report_id": "L05", "answer": "F05", "kind": "lost", "category": "wallet", "color": "brown", "brand": null, "location": "Kendall", "date": "2026-10-19", "description": "brown leather wallet"},
+    {"report_id": "L06", "answer": "F06", "kind": "lost", "category": "umbrella", "color": "green", "brand": null, "location": "Lobby 10", "date": "2026-10-24", "description": "big green umbrella"},
+    {"report_id": "L07", "answer": "F07", "kind": "lost", "category": "charger", "color": "white", "brand": "Apple", "location": "Barker", "date": "2026-10-25", "description": "macbook usb-c charger"},
+    {"report_id": "L08", "answer": "F08", "kind": "lost", "category": "jacket", "color": "navy", "brand": "Patagonia", "location": "Media Lab", "date": "2026-10-21", "description": "navy patagonia fleece"},
+    {"report_id": "L09", "answer": "F09", "kind": "lost", "category": "backpack", "color": "gray", "brand": "Herschel", "location": "dining hall", "date": "2026-10-26", "description": "gray herschel backpack"},
+    {"report_id": "L10", "answer": "F10", "kind": "lost", "category": "glasses", "color": "black", "brand": null, "location": "Rotch", "date": "2026-10-22", "description": "black glasses in a case"}
+  ]
+}
