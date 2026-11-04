@@ -206,9 +206,20 @@ def score_pair(lost: dict, found: dict) -> dict:
 
 
 def rank_alias(lost: dict, founds: Iterable[dict], limit: int = 3) -> list[dict]:
-    """Rank found reports for one lost report; drop weak candidates."""
+    """Rank candidates only with positive evidence of a shared item type.
+
+    HW7 tuning found that half-credit for an unknown category could surface
+    unrelated items. Abstain when type evidence is missing or unsupported;
+    category words in the description still work through normalize(). This
+    conservative policy trades recall on unseen types for fewer suggestions.
+    """
+    category = normalize(lost)["category"]
+    if category is None:
+        return []
     scored = []
     for f in founds:
+        if normalize(f)["category"] != category:
+            continue
         s = score_pair(lost, f)
         if s["score"] >= MIN_SCORE:
             scored.append({"report_id": f["report_id"], **s})
