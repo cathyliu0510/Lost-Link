@@ -2,9 +2,19 @@
 
 Team: Kemeng Zhang, Yicheng Liu. MIT MAS.665, November 4, 2026.
 
+## Team contributions
+
+- **Kemeng Zhang** (lead): defined the claim, primary metric and pre-set success checks; designed the baseline and three-arm comparison; wrote the tuning and fresh test cases; diagnosed the original ranker’s false suggestions on absent items and designed the category-eligibility change; analyzed results and limitations; wrote the report.
+- **Yicheng Liu**: implemented the benchmark harness and verifier; ran the discovery and retest experiments; packaged the evidence bundle and reproducibility materials.
+
 The submission is `Lost_Link_HW7.pdf`. The PDF includes an embedded copy of
-`Lost_Link_HW7_reproducibility.zip`, so the evidence remains available even
-when a grader cannot access this private repository. Extract the PDF attachment
+`Lost_Link_HW7_reproducibility.zip` for offline inspection. The repository and
+supporting evidence are public and accessible without signing in:
+
+- [Readable execution evidence](https://github.com/cathyliu0510/Lost-Link/blob/main/HW7_execution_evidence.json)
+- [Source and reproducibility bundle](https://github.com/cathyliu0510/Lost-Link/blob/main/Lost_Link_HW7_reproducibility.zip)
+
+Extract the PDF attachment
 with a PDF reader's Attachments panel, or with Python:
 
 ```python
