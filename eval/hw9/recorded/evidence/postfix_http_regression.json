@@ -1,0 +1,149 @@
+{
+  "context": "Operator-run final HTTP regression of the portable launcher; not a fresh agent run",
+  "at": "2026-11-19T00:17:15.466838+00:00",
+  "source_sha256": "df0da639444c37f770275680c61aeb17ae0b80f7844619cf8462597d033e008b",
+  "requests": [
+    {
+      "at": "2026-11-19T00:17:15.454124+00:00",
+      "method": "POST",
+      "path": "/v1/reports",
+      "request": {
+        "kind": "lost",
+        "category": "flask",
+        "color": "navy",
+        "location": "library",
+        "description": "synthetic HTTP date regression",
+        "date": "2026-02-30",
+        "request_id": "final-post-intent"
+      },
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "date"
+            ],
+            "msg": "Value error, date must be a real calendar date in YYYY-MM-DD format, or null",
+            "input": "2026-02-30",
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-11-19T00:17:15.457105+00:00",
+      "method": "POST",
+      "path": "/v1/reports",
+      "request": {
+        "kind": "lost",
+        "category": "flask",
+        "color": "navy",
+        "location": "library",
+        "description": "synthetic HTTP date regression",
+        "date": "2024-02-29",
+        "request_id": "final-post-intent"
+      },
+      "expected_status": 200,
+      "actual_status": 200,
+      "response": {
+        "report_id": "L-872636",
+        "version": 1,
+        "duplicate_request": false
+      }
+    },
+    {
+      "at": "2026-11-19T00:17:15.459278+00:00",
+      "method": "PATCH",
+      "path": "/v1/reports/L-872636",
+      "request": {
+        "expected_version": 1,
+        "date": "2026-02-30"
+      },
+      "expected_status": 422,
+      "actual_status": 422,
+      "response": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body",
+              "date"
+            ],
+            "msg": "Value error, date must be a real calendar date in YYYY-MM-DD format, or null",
+            "input": "2026-02-30",
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "at": "2026-11-19T00:17:15.461818+00:00",
+      "method": "PATCH",
+      "path": "/v1/reports/L-872636",
+      "request": {
+        "expected_version": 1,
+        "date": "2026-11-17"
+      },
+      "expected_status": 200,
+      "actual_status": 200,
+      "response": {
+        "report_id": "L-872636",
+        "version": 2
+      }
+    },
+    {
+      "at": "2026-11-19T00:17:15.463768+00:00",
+      "method": "PATCH",
+      "path": "/v1/reports/L-872636",
+      "request": {
+        "expected_version": 2,
+        "date": null
+      },
+      "expected_status": 200,
+      "actual_status": 200,
+      "response": {
+        "report_id": "L-872636",
+        "version": 3
+      }
+    },
+    {
+      "at": "2026-11-19T00:17:15.466803+00:00",
+      "method": "POST",
+      "path": "/v1/reports",
+      "request": {
+        "kind": "lost",
+        "category": "flask",
+        "color": "navy",
+        "location": "library",
+        "description": "synthetic HTTP date regression",
+        "date": null,
+        "request_id": "final-null-date"
+      },
+      "expected_status": 200,
+      "actual_status": 200,
+      "response": {
+        "report_id": "L-316090",
+        "version": 1,
+        "duplicate_request": false
+      }
+    }
+  ],
+  "database_after_bad_patch": {
+    "report_id": "L-872636",
+    "date": "2024-02-29",
+    "version": 1
+  },
+  "database_after_null_patch": {
+    "report_id": "L-872636",
+    "date": "2026-11-17",
+    "version": 3
+  },
+  "all_checks_passed": true
+}

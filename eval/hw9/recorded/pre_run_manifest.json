@@ -1,0 +1,12 @@
+{
+  "written_before_client": true,
+  "recorded_at": "2026-11-18T22:20:15.407360+00:00",
+  "sha256": {
+    "plan.json": "80145fbaf5340352679ea9f442508a45624c12011fe11ca7a12dbcb9eee43a7e",
+    "coldstart/AGENT_GUIDE.md": "0744c550f3035b00b8cad320c7ec52621d756eb5f4bd313c9977e3178b726f4c",
+    "experiment.py": "1a56434aa5cd82fb28e349c1552688b742f030e275399e199ef7e85dcdcee082",
+    "coldstart/task.txt": "a8e7f9787322c242229102ed25bca72379450ae726a1522f369aba2667f343f2",
+    "coldstart/access.json": "1361a5634c42c73eac7ea95d1e5a9567a2a64882668e04a6873676e557c49c2c"
+  },
+  "client_started_after": "2026-11-18T22:20:39.728411+00:00"
+}

@@ -28,11 +28,11 @@ import secrets
 import sqlite3
 import threading
 from contextlib import asynccontextmanager
-from datetime import datetime, timezone
-from typing import Literal, Optional
+from datetime import date as calendar_date, datetime, timezone
+from typing import Annotated, Literal, Optional
 
 from fastapi import Depends, FastAPI, Header, HTTPException, Request
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import AfterValidator, BaseModel, ConfigDict, Field
 
 from . import matching
 
@@ -143,18 +143,31 @@ class Strict(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
 
+def real_iso_date(value: str) -> str:
+    """Keep date strings canonical so retrieval never silently ignores bad dates."""
+    try:
+        parsed = calendar_date.fromisoformat(value)
+    except ValueError:
+        raise ValueError("date must be a real calendar date in YYYY-MM-DD format, or null") from None
+    if parsed.isoformat() != value:
+        raise ValueError("date must use YYYY-MM-DD format, or null")
+    return value
+
+
+ISODate = Annotated[str, AfterValidator(real_iso_date)]
+
+
 class ReportIn(Strict):
     kind: Literal["lost", "found"]
     category: Optional[str] = None
     color: Optional[str] = None
     brand: Optional[str] = None
     location: Optional[str] = None
-    date: Optional[str] = Field(None, description="ISO date YYYY-MM-DD, or null if unknown")
+    date: Optional[ISODate] = Field(None, description="Real calendar date YYYY-MM-DD, or null if unknown")
     description: str
     private_detail: Optional[str] = Field(
         None, description="Verification detail; stored, never shown in search")
     request_id: str = Field(..., description="Client-chosen id; retries reuse it")
-
 
 class ReportPatch(Strict):
     expected_version: int
@@ -162,7 +175,7 @@ class ReportPatch(Strict):
     color: Optional[str] = None
     brand: Optional[str] = None
     location: Optional[str] = None
-    date: Optional[str] = None
+    date: Optional[ISODate] = Field(None, description="Real calendar date YYYY-MM-DD; null leaves it unchanged")
     description: Optional[str] = None
 
 

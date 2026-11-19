@@ -7,6 +7,9 @@ check case status. The item holder's **human** approves the pickup. An agent can
 MIT MAS.665 (AI Studio, Fall 2026) team project: Kemeng Zhang, Yicheng Liu.
 Current status and next steps are in [`PROGRESS.md`](PROGRESS.md).
 
+HW9: [agent interface guide](docs/AGENT_GUIDE.md),
+[cold-start evidence and reproduction](HW9_README.md).
+
 ```
 finder-agent ──register_report──┐
                                 ▼

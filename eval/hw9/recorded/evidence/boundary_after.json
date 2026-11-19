@@ -1,0 +1,31 @@
+{
+  "at": "2026-11-18T22:30:16.814107+00:00",
+  "phase": "after",
+  "expected_status": 422,
+  "request": {
+    "kind": "lost",
+    "category": "flask",
+    "color": "navy",
+    "location": "library",
+    "date": "2026-02-30",
+    "description": "navy flask",
+    "request_id": "hw9-invalid-date-after"
+  },
+  "actual_status": 422,
+  "response": {
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "body",
+          "date"
+        ],
+        "msg": "Value error, date must be a real calendar date in YYYY-MM-DD format, or null",
+        "input": "2026-02-30",
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  }
+}

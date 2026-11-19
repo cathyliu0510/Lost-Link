@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+secrets.json
+lostlink.db*
+demo_state.json
+# Disposable HW9 runs contain credentials and operator-only verification data.
+.hw9-runs/
+access.json

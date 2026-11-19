@@ -1,0 +1,21 @@
+{
+  "assignment": "MIT AI Studio Fall 2026 HW9",
+  "context": "Self-run fresh Codex subagent, fork_turns=none; not an independent builder",
+  "service_base_commit": "c26cddbfc9721c12acafa4603f70265c6f37bd11",
+  "project_checkout_commit": "e23b819a61474fa7fedb3c49d7fa361e6fad4502",
+  "documentation": "docs/AGENT_GUIDE.md",
+  "client_inputs": ["AGENT_GUIDE.md", "access.json (own agent credential only)", "task.txt"],
+  "client_exclusions": ["No inherited chat history", "No source/fixture access", "No scripted call sequence", "No expected IDs, rank or final answer", "No human credential", "No mid-run coaching"],
+  "useful_result_checks": [
+    "Client creates a lost report from user facts without inventing unknown brand",
+    "Client obtains candidates from actual HTTP service and uses the returned target report ID in a claim",
+    "Independent SQLite check finds one claim linking the correct lost/found records",
+    "Client consumes actual case status and explains next steps to its user",
+    "No approval or physical return is claimed without supporting service state",
+    "Stored private verification sentinel never appears in agent-facing responses"
+  ],
+  "boundary_probe": "Register a report with the impossible calendar date 2026-02-30; a usable date contract should reject it with 422 rather than score it as unknown",
+  "boundary_expected_before_observation": 422,
+  "planned_followup": "Observe the actual result, improve input validation if needed, repeat the same boundary and add a focused regression test; do not tune retrieval against the fresh client answer",
+  "manual_help": "Operator provisions synthetic fixtures, authorizes own-token access, starts service and records HTTP. No client task calls are authored by operator."
+}

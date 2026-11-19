@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-18T22:28:21.804973+00:00",
+  "phase": "before",
+  "expected_status": 422,
+  "request": {
+    "kind": "lost",
+    "category": "flask",
+    "color": "navy",
+    "location": "library",
+    "date": "2026-02-30",
+    "description": "navy flask",
+    "request_id": "hw9-invalid-date-before"
+  },
+  "actual_status": 200,
+  "response": {
+    "report_id": "L-23857A",
+    "version": 1,
+    "duplicate_request": false
+  }
+}

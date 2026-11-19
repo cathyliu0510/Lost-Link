@@ -1,0 +1,96 @@
+{
+  "report_request": {
+    "kind": "lost",
+    "description": "Navy flask lost in the library on 2026-11-17.",
+    "category": "flask",
+    "color": "navy",
+    "brand": null,
+    "location": "library",
+    "date": "2026-11-17",
+    "private_detail": "A green cactus sticker near its cap.",
+    "request_id": "coldstart-lost-700e1580-14cc-494d-89a4-3564f9b18bd1"
+  },
+  "report_response": {
+    "report_id": "L-9F69A3",
+    "version": 1,
+    "duplicate_request": false
+  },
+  "matches_response": {
+    "lost_report_id": "L-9F69A3",
+    "candidates": [
+      {
+        "report_id": "F-C60E22",
+        "score": 0.94,
+        "reasons": [
+          "category matches after normalization (bottle)",
+          "color matches after normalization (blue)",
+          "location matches after normalization (library)",
+          "dates within 0 day(s)",
+          "shared description words: blue, bottle"
+        ],
+        "unknown": [],
+        "conflicts": [],
+        "found_report": {
+          "report_id": "F-C60E22",
+          "kind": "found",
+          "category": "water bottle",
+          "color": "blue",
+          "brand": null,
+          "location": "Hayden Library",
+          "date": "2026-11-17",
+          "description": "blue water bottle",
+          "status": "open",
+          "version": 1
+        }
+      },
+      {
+        "report_id": "F-C11852",
+        "score": 0.47,
+        "reasons": [
+          "category matches after normalization (bottle)",
+          "dates 7 days apart",
+          "shared description words: bottle"
+        ],
+        "unknown": [],
+        "conflicts": [
+          "color: lost=blue, found=black",
+          "location: lost=library, found=gym"
+        ],
+        "found_report": {
+          "report_id": "F-C11852",
+          "kind": "found",
+          "category": "thermos",
+          "color": "black",
+          "brand": null,
+          "location": "Z Center",
+          "date": "2026-11-10",
+          "description": "black thermos",
+          "status": "open",
+          "version": 1
+        }
+      }
+    ],
+    "missing": [
+      "brand"
+    ],
+    "note": "A candidate is only worth checking; ownership is verified by the holder using private details. Submit a claim to proceed."
+  },
+  "claim_request": {
+    "lost_report_id": "L-9F69A3",
+    "found_report_id": "F-C60E22",
+    "claim_message": "I lost my navy flask in the library on 2026-11-17. I do not know the brand. As a private ownership detail, there is a green cactus sticker near its cap. Please verify this detail before deciding whether to release the item.",
+    "request_id": "coldstart-claim-e1e9982f-1488-427a-adea-8cd281269b69"
+  },
+  "claim_response": {
+    "case_id": "C-5A56DA",
+    "status": "submitted",
+    "duplicate_request": false
+  },
+  "case_response": {
+    "case_id": "C-5A56DA",
+    "status": "submitted",
+    "found_report_id": "F-C60E22",
+    "clarification_request": null,
+    "human_decisions": []
+  }
+}

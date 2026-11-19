@@ -1,0 +1,57 @@
+{
+  "outcome": "recovery_claim_submitted_awaiting_holder_review",
+  "lost_report": {
+    "report_id": "L-9F69A3",
+    "version": 1,
+    "duplicate_request": false
+  },
+  "selected_candidate": {
+    "report_id": "F-C60E22",
+    "score": 0.94,
+    "reasons": [
+      "category matches after normalization (bottle)",
+      "color matches after normalization (blue)",
+      "location matches after normalization (library)",
+      "dates within 0 day(s)",
+      "shared description words: blue, bottle"
+    ],
+    "unknown": [],
+    "conflicts": [],
+    "found_report": {
+      "report_id": "F-C60E22",
+      "kind": "found",
+      "category": "water bottle",
+      "color": "blue",
+      "brand": null,
+      "location": "Hayden Library",
+      "date": "2026-11-17",
+      "description": "blue water bottle",
+      "status": "open",
+      "version": 1
+    }
+  },
+  "selection_reason": "The selected open candidate matches the user-supplied item type, color, library location, and 2026-11-17 date after service normalization, with no reported conflicts. The other candidate has color and location conflicts and a seven-day date difference. This supports asking the holder to verify ownership, not declaring it.",
+  "claim": {
+    "case_id": "C-5A56DA",
+    "status": "submitted",
+    "duplicate_request": false
+  },
+  "case": {
+    "case_id": "C-5A56DA",
+    "status": "submitted",
+    "found_report_id": "F-C60E22",
+    "clarification_request": null,
+    "human_decisions": []
+  },
+  "verification_detail_sent_privately": true,
+  "ownership_confirmed": false,
+  "pickup_approved": false,
+  "next_step": "Await holder review; answer a clarification request if one appears; use pickup instructions only after human approval.",
+  "friction": [
+    "The initial localhost request failed with ConnectError: [Errno 1] Operation not permitted. A sandbox escalation allowed the same persisted request ID to complete.",
+    "The initial access.json read mistakenly displayed the credential in tool output. No credential value is present in saved client code, request/response logs, client state, or result files."
+  ],
+  "manual_task_help_needed": false,
+  "setup_help": "Localhost sandbox execution approval only.",
+  "service_requests_after_network_access": 4
+}

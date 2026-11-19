@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-11-19T00:17:36.252589+00:00",
+  "command": "python -m pytest -q",
+  "exit_code": 0,
+  "passed": 26,
+  "failed": 0,
+  "warnings": 1,
+  "warning": "StarletteDeprecationWarning: Using httpx with starlette.testclient is deprecated; install httpx2 instead.",
+  "environment": "Python 3.12; local loopback binding permitted; includes existing live dashboard subprocess test"
+}
